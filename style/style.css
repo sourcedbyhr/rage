@@ -1,0 +1,92 @@
+/* Google font styles */
+/* main body font */
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato", sans-serif;
+}
+/* navigation and header font */
+nav li, header h1, header h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* body styles */
+html {
+  width: 70%;
+  margin: auto;
+  background-color: #cccccc
+}
+
+body {
+  background-color: #edecda;
+  padding: 10px;
+  border-radius: 25px;	
+  box-shadow: 10px 10px 5px rgba (0, 0, 0, 0.2)
+}
+
+/* header styles */
+header img {
+  float: left;
+  margin-right: 10px;
+}
+
+/* nav styles */
+nav {
+  padding-top: 5px;
+}
+nav ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+nav li {
+  display: inline;
+}
+nav li a {
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #aaaaaa;
+  color: #000000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+/* change the link colours on hover */
+nav li a:hover {
+  background-color: #cccccc;
+  color: #ffffff;
+}
+
+/* footer styles */
+footer {
+  border-top: 1px solid #000000;
+  overflow: hidden;
+}
+footer ul#social {
+  float: right;
+}
+footer ul#legal {
+  float: left;
+}
+#rcorners1 {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+#rcorners3 {
+  border-radius: 25px;
+  background: url(paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}

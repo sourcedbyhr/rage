@@ -1,0 +1,65 @@
+#practice project online bank
+initial_balance = 567.89
+
+def exit_return():
+    exit_return1 = input("Would you like to exit or return back to the main menu?")
+    if exit_return1 == "return":
+        print("You will now return to the main menu...")
+        bank_menu()
+    if exit_return1 == "exit":
+            online_banking = False
+            print("You have successfully exited")
+def bank_pin():
+    pin = int(input("Please enter your pin:"))
+    if pin == 1234:
+        print("Correct Pin!")
+    else:
+        print("Incorrect Pin!")
+        print("Please try again")
+        bank_pin()
+
+def bank_menu():
+    print("1. Balance")
+    print("2. Deposit")
+    print("3. Withdraw")
+    print("4. Exit")
+    bank_choice = input("Please choose one of the following options:")
+
+    if bank_choice == "1":
+        print("Current Balance:")
+        print(current_balance)
+        exit_return()
+
+
+
+    if bank_choice == "2":
+        print("Please enter in decimals/float values. E.G. 500.00")
+        deposit_amount = float(input("Please enter the amount you would like to deposit:"))
+        current_balance = initial_balance + deposit_amount
+        print(current_balance)
+        exit_return()
+
+
+    if bank_choice == "3":
+        print("Please enter in decimals/float values. E.G. 500.00")
+        withdraw_amount = float(input("Please enter the amount you would like to withdraw"))
+        current_balance = initial_balance - withdraw_amount
+        print(current_balance)
+        exit_return()
+
+    if bank_choice == "4":
+        online_banking = False
+        print("You have successfully exited.")
+
+    else:
+        print("Error!")
+        print("Please enter your answer beginning with capital letters.")
+        online_banking = False
+        print("You have successfully exited")
+
+bank_pin()
+bank_menu()
+
+
+
+
